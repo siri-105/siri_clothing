@@ -1,0 +1,321 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #b80048;
+  --color-primary-container: #e0205e;
+  --color-primary-fixed: #ffd9dd;
+  --color-primary-fixed-dim: #ffb2bd;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #400014;
+  --color-on-primary-fixed-variant: #900037;
+
+  --color-surface: #fbf8ff;
+  --color-surface-dim: #d6d8f2;
+  --color-surface-bright: #fbf8ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f2ff;
+  --color-surface-container: #ececff;
+  --color-surface-container-high: #e4e7ff;
+  --color-surface-container-highest: #dee1fa;
+  --color-surface-tint: #bd004a;
+
+  --color-tertiary: #006953;
+  --color-tertiary-container: #008469;
+  --color-tertiary-fixed: #7bf8d3;
+  --color-tertiary-fixed-dim: #5cdcb8;
+  --color-tertiary-fixed-variant: #00513f;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #f5fff9;
+
+  --color-secondary: #595f69;
+  --color-secondary-container: #dae0ec;
+  --color-secondary-fixed: #dde3ef;
+  --color-on-secondary: #ffffff;
+
+  --color-on-surface: #161b2d;
+  --color-on-surface-variant: #5b3f43;
+
+  --color-inverse-surface: #2b2f43;
+  --color-inverse-on-surface: #efefff;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-outline-variant: #e3bdc2;
+
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-headline: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-headline-sm {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.font-headline-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-title-md {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.font-price-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-price-sm {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-label-md {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.font-label-sm {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+/* Material symbols styling helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Spacing and sizing aliases matching HTML */
+.px-margin {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-margin {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.p-margin {
+  padding: 0.75rem;
+}
+
+.right-margin {
+  right: 0.75rem;
+}
+
+.left-margin {
+  left: 0.75rem;
+}
+
+.gap-gutter {
+  gap: 0.5rem;
+}
+
+.gap-space-xs {
+  gap: 0.25rem;
+}
+
+.gap-space-sm {
+  gap: 0.5rem;
+}
+
+.gap-space-md {
+  gap: 0.75rem;
+}
+
+.gap-space-lg {
+  gap: 1rem;
+}
+
+.p-space-xs {
+  padding: 0.25rem;
+}
+
+.p-space-sm {
+  padding: 0.5rem;
+}
+
+.p-space-md {
+  padding: 0.75rem;
+}
+
+.p-space-lg {
+  padding: 1rem;
+}
+
+.px-space-xs {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-space-sm {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-space-md {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-space-lg {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-space-xs {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-space-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-space-md {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-space-lg {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt-space-xs {
+  padding-top: 0.25rem;
+}
+
+.pt-space-sm {
+  padding-top: 0.5rem;
+}
+
+.pt-space-md {
+  padding-top: 0.75rem;
+}
+
+.pt-space-lg {
+  padding-top: 1rem;
+}
+
+.pb-space-xs {
+  padding-bottom: 0.25rem;
+}
+
+.pb-space-sm {
+  padding-bottom: 0.5rem;
+}
+
+.pb-space-md {
+  padding-bottom: 0.75rem;
+}
+
+.pb-space-lg {
+  padding-bottom: 1rem;
+}
+
+.mb-space-xs {
+  margin-bottom: 0.25rem;
+}
+
+.mb-space-sm {
+  margin-bottom: 0.5rem;
+}
+
+.mb-space-md {
+  margin-bottom: 0.75rem;
+}
+
+.mb-space-lg {
+  margin-bottom: 1rem;
+}
+
+.mt-space-xs {
+  margin-top: 0.25rem;
+}
+
+.mt-space-sm {
+  margin-top: 0.5rem;
+}
+
+.mt-space-md {
+  margin-top: 0.75rem;
+}
+
+.mt-space-lg {
+  margin-top: 1rem;
+}
+
+.space-y-space-xs > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.25rem;
+}
+
+.space-y-space-sm > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.5rem;
+}
+
+.space-y-space-md > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.75rem;
+}
+
+.space-y-space-lg > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 12px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}

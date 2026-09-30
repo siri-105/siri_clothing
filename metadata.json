@@ -1,0 +1,6 @@
+{
+  "name": "Siri Clothing - Ethnic & Festive Fashion",
+  "description": "Discover curated ethnic wear, Kurtas, Anarkalis, and festive collections on Siri Clothing with exclusive discounts, seamless checkout, and fast delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
